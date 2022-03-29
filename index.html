@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-sacle=1.0">
+        <title>
+            Ashu Heatlth Care
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&family=Roboto+Serif:ital,wght@0,100;1,200;1,300;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/ash.png" width="100px" height="100px" name="Ashu Health Chat"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="chat box.html">Chat Box</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+               <h1>
+                Ashu Health Care
+               </h1>
+               <p> Why to waste time when you can find your illness here. Get the right information of your illness right now here from your house.<br>
+                Come and ask us whatever your health issues are we will provide you the best solutions.Visit us now.
+               </p>
+               <a href="chat box.html" class="hero-btn">Click here to go to chat box</a>
+           </div>
+        </section>
+
+        <section class="abouts">
+            <h1>About US</h1>
+            <p>
+                Developing a azure chat box to chek you health issue wheather it is serious or not. And to help you give proper guidance. The Azure Bot is further connected to the database of the ilness and there information and cure.
+            </p>
+            <h3>
+                Azure services Used
+            </h3>
+
+            <div class="row">
+                <div class="about-col">
+                    <a href="index.html"><img src="images/Q.png"></a>
+                    <h4> QnA maker</h4>
+                    <p>
+                        QnA Maker is a no code way to build bots.
+                        QnA Maker extracts questions and answers from FAQ pages
+                    </p>
+                
+                </div>
+                <div class="about-col">
+                    <a href="index.html"><img src="images/bot.png"></a>
+                    <h4> Azure Bot</h4>
+                    <p>
+                        Azure Bot Service is a managed bot development service that helps you seamlessly connect to your users via popular channels.  
+                    </p>
+                
+                </div>
+                <div class="about-col">
+                    <a href="index.html"><img src="images/web.png"></a>
+                    <h4>Azure web App</h4>
+                    <p>
+                        Web Apps. Quickly create and deploy mission-critical web apps at scale · API Management. Publish APIs to developers, partners, and employees securely  
+                    </p>
+                
+                </div>
+            </div>
+            <div class="copyright">
+                <h4>This website is only a for propose of project and it is owned by Ashu Health Care.</h4>
+            </div>
+
+        </section>
+
+    
+        <script>
+            var navlinks= document.getElementById("navlinks");
+
+            function showMenu(){
+                navlinks.style.right="0";
+            }
+            function hideMenu(){
+                navlinks.style.right="-200px";
+            }
+        </script>
+
+       
+    </body>
+</html>
